@@ -12,7 +12,7 @@ from wx._core import EVT_ACTIVATE
 import wx.lib.newevent
 
 
-TRAY_TOOLTIP = 'System Tray Demo'
+TRAY_TOOLTIP = 'wxMailServer'
 TRAY_ICON = 'icon.png'
 messages = Queue.Queue()
 
@@ -118,8 +118,8 @@ class TaskBarIcon(wx.TaskBarIcon):
 
     def CreatePopupMenu(self):
         menu = wx.Menu()
-        create_menu_item(menu, 'Say Hello', self.on_hello)
-        menu.AppendSeparator()
+        #create_menu_item(menu, 'Say Hello', self.on_hello)
+        #menu.AppendSeparator()
         create_menu_item(menu, 'Exit', self.on_exit)
         return menu
 
